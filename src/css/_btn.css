@@ -1,0 +1,52 @@
+.btn {
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  color: var(--color-primary);
+  border: 0.125rem solid #fff; /* as bordadas e dividas em 3 valores*/
+  border-radius: 5rem;
+  background: unset;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s all ease;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn--institutional {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 0 5rem #fff;
+}
+
+.btn--institutional,
+.btn--quote {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .btn--institutional,
+  .btn--quote {
+    display: unset;
+    margin: unset;
+  }
+}
+
+.btn--institutional:hover {
+  color: var(--color-copy);
+  background: unset;
+  box-shadow: 0 1rem 5rem var(--color-copy);
+}
+
+.btn--quote {
+  color: var(--color-copy);
+  border-color: var(--color-copy);
+  background: unset;
+}
+
+.btn--quote:hover {
+  box-shadow: 0 1rem 5rem var(--color-copy);
+}
